@@ -69,7 +69,7 @@ module.exports = function(grunt) {
         options: {
           key: 'YLcsX3M8pGNa6MoxpVYb-Q',
           sender: 'kevin@litmus.com',
-          recipient: 'litmus64.bc59855.new@emailtests.com'.
+          recipient: 'litmus64.bc59855.new@emailtests.com',
           subject: 'This is a test email'
         }
       },
