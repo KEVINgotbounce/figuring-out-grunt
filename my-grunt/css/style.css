@@ -1,0 +1,143 @@
+/* CLIENT-SPECIFIC STYLES */
+
+/* Force Outlook to provide a "view in browser" message */
+
+/* Force Hotmail to display emails at full width */
+
+/* Force Hotmail to display normal line spacing */
+
+body,
+table,
+td,
+a {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Prevent WebKit and Windows mobile changing default text sizes */
+
+table,
+td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+/* Remove spacing between tables in Outlook 2007 and up */
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Allow smoother rendering of resized image in Internet Explorer */
+
+/* RESET STYLES */
+
+img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: 100% !important;
+}
+
+@media screen {
+  @font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+                 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+                 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  table[class="responsive-table"] {
+    width: 500px !important;
+    height: auto !important;
+  }
+
+  table[class="responsive-table5"] {
+    width: 600px !important;
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  br[class="mobile-hide"] {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  table[class="wrapper"] {
+    width: 100% !important;
+  }
+
+  td[class="logo"] {
+    text-align: left;
+    padding: 20px 0 20px 0 !important;
+  }
+
+  td[class="mobile-hide"] {
+    display: none !important;
+  }
+
+  td[class="logo"] img {
+    margin: 0 auto!important;
+  }
+
+  img[class="img-max"] {
+    max-width: 100%;
+    height: auto;
+  }
+
+  table[class="responsive-table"] {
+    width: 100% !important;
+  }
+
+  table[class="responsive-table2"] {
+    width: 100%!important;
+    border: 0 !important;
+  }
+
+  td[class="padding2"] {
+    padding: 10px 5% 10px 5% !important;
+    text-align: left;
+  }
+
+  td[class="padding3"] {
+    padding: 25px 5% 0 5% !important;
+    text-align: left;
+  }
+
+  td[class="section-padding"] {
+    padding: 50px 15px 50px 15px !important;
+  }
+
+  td[class="section-padding2"] {
+    padding: 50px 15px 0 15px !important;
+  }
+
+  table[class="responsive-table2"] {
+    width: 100%!important;
+  }
+}
