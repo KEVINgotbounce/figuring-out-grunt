@@ -73,7 +73,7 @@ module.exports = function(grunt) {
           subject: 'This is a test email'
         }
       },
-      src: ['test.html']
+      src: ['test-inline.html']
     }
 
   }
