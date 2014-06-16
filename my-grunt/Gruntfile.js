@@ -71,9 +71,9 @@ module.exports = function(grunt) {
           sender: 'kevin@litmus.com',
           recipient: 'litmus64.bc59855.new@emailtests.com',
           subject: 'This is a test email'
-        }
-      },
-      src: ['test-inline.html']
+        },
+        src: ['test-inline.html']
+      }
     }
 
   }
