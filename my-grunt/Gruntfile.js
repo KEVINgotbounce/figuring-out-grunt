@@ -69,12 +69,28 @@ module.exports = function(grunt) {
         options: {
           key: 'YLcsX3M8pGNa6MoxpVYb-Q',
           sender: 'kevin@litmus.com',
-          recipient: 'litmus64.bc59855.new@emailtests.com',
+          recipient: 'kevin@litmus.com',
           subject: 'This is a test email'
         },
         src: ['test-inline.html']
       }
+    },
+
+    emailBuilder: {
+      litmus: {
+        options: {
+          encodeSpecialChars: true,
+          litmus: {
+            username: 'kevin@litmus.com',
+            password: 'theconsequence',
+            url: 'https://litmus.litmus.com',
+            applications: ['gmailnew', 'ffgmail', 'chromegmail']
+          },
+        src: ['test-inline.html']
+        }
+      }
     }
+
 
   }
 
@@ -93,7 +109,7 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default Task is basically a rebuild
-  grunt.registerTask('default', ['concat', 'imagemin', 'cssmin', 'uncss', 'premailer', 'mandrill']);
+  grunt.registerTask('default', ['uncss', 'premailer', 'mandrill', 'emailBuilder:litmus']);
 
   // Moved to the tasks folder:
   // grunt.registerTask('dev', ['connect', 'watch']);
