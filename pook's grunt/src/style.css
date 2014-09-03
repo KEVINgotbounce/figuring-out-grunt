@@ -1,0 +1,58 @@
+	/* RESET STYLES */
+	p{margin:1em 0;}
+	table{border-collapse:collapse; table-layout:fixed;}
+	img, a img{border:0; height:auto; outline:none; text-decoration:none;}
+	h1, h2, h3, h4, h5, h6{display:block !important; margin:0 !important; padding:0 !important;}
+	body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+	/* CLIENT-SPECIFIC STYLES */
+	img{-ms-interpolation-mode: bicubic;} /* Force IE to smoothly render resized images. */
+	#outlook a{padding:0;} /* Force Outlook 2007 and up to provide a "view in browser" message. */
+	table{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up. */
+	.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Outlook.com to display emails at full width. */
+	p, a, li, td, blockquote{mso-line-height-rule:exactly;} /* Force Outlook to render line heights as they're originally set. */
+	a[href^="tel"], a[href^="sms"]{color:inherit; cursor:default; text-decoration:none;} /* Force mobile devices to inherit declared link styles. */
+	p, a, li, td, body, table, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
+	.ExternalClass, .ExternalClass p, .ExternalClass td, .ExternalClass div, .ExternalClass span, .ExternalClass font{line-height:100%;} /* Force Outlook.com to display line heights normally. */
+
+	/* STRUCTURAL STYLES */
+	.emailContainer{max-width:640px;}
+	.flexibleColumn{max-width:320px;}
+	.flexibleGrid{max-width:213px;}
+
+	/* CONTENT STYLES */
+	body{background-color:#000000;}
+	img{border-radius:12px;}
+
+	#emailPreheader{background-color:#202020; padding-top:10px; padding-bottom:10px;}
+	#previewContent{color:#AEAEAE; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16px; text-align:left;}
+	#logoContent, #logo, #logo a{color:#48C0EB !important; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:32px; font-weight:bold; line-height:32px; text-align:left; text-decoration:none;}
+
+	#emailHeader{background-color:#48C0EB; padding-top:30px; padding-bottom:30px;}
+	#heroImage{width:100% !important;}
+	.headerContent{color:#202020; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:18px; line-height:24px; padding-top:10px; text-align:center;}
+	.headerContent h2{color:#202020 !important; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:26px; font-weight:bold; text-align:center;}
+	.headerContent h3{color:#202020 !important; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:20px; font-weight:bold; text-align:center;}
+	.headerButtonContainer{padding-top:20px;}
+	.headerButton{background-color:#202020; border-radius:3px;}
+	.headerButtonContent{padding-top:8px; padding-right:20px; padding-bottom:8px; padding-left:20px; text-align:center;}
+	.headerButtonContent, .headerButtonContent a{color:#FFFFFF; display:block; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; line-height:18px; text-align:center; text-decoration:none;}
+
+	#emailGrid{background-color:#000000; padding-top:30px; padding-bottom:40px;}
+	.gridContent{color:#AEAEAE; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; line-height:24px; padding-bottom:30px; text-align:center;}
+	.gridContent h2{color:#FFFFFF !important; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:26px; font-weight:bold; text-align:center;}
+
+	#emailArticles{background-color:#202020; padding-top:30px; padding-bottom:10px;}
+	.articleContent{color:#AEAEAE; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; line-height:24px; text-align:left;}
+	.articleContent h2{color:#FFFFFF !important; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:26px; font-weight:bold; text-align:center;}
+	.articleContent h3{color:#FFFFFF !important; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:20px; font-weight:bold; text-align:left;}
+	.articleContent h5{color:#48C0EB !important; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; font-weight:normal; text-align:left;}
+	.articleButtonContainer{padding-bottom:30px;}
+	.articleButton{background-color:#FFCF47; border-radius:3px;}
+	.articleButtonContent{padding-top:8px; padding-right:20px; padding-bottom:8px; padding-left:20px;}
+	.articleButtonContent, .articleButtonContent a{color:#000000; display:block; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; line-height:18px; text-align:center; text-decoration:none;}
+
+	#emailFooter{background-color:#000000; padding-top:30px; padding-bottom:30px;}
+	.footerContent{color:#AEAEAE; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:12px; line-height:16px; text-align:center;}
+	.footerContent a{color:#AEAEAE !important; text-decoration:underline;}
+	.footerContent span{color:#AEAEAE; text-decoration:none;}

@@ -1,0 +1,47 @@
+/* MOBILE STYLES */
+	@media only screen{ /* If media queries are supported, make all images fluid. */
+		img{width:100%;}
+	}
+
+	@media screen and (min-width:768px){ /* Set min-width for clients that have media query support, but no max-width support. */
+		/* STRUCTURAL STYLES */
+		.emailContainer{width:640px !important;}
+		#emailLogo{max-width:200px;}
+		#emailPreview{max-width:440px;}
+		.flexibleColumn{width:50% !important;}
+		.flexibleGrid{width:33% !important;}
+	}
+
+	@media screen and (max-width:768px){
+		/* STRUCTURAL STYLES */
+		#emailPreview, #emailLogo{max-width:100% !important; width:100% !important;}
+		.flexibleColumn{max-width:50% !important; width:100% !important;}
+		.flexibleGrid{max-width:33% !important;}
+
+		/* CONTENT STYLES */
+		#emailPreview, #emailLogo{max-width:100% !important; width:100% !important;}
+		#previewContent, #logoContent, #logo{text-align:center !important;}
+	}
+
+	@media only screen and (max-width:480px){
+		/* CLIENT-SPECIFIC STYLES */
+		body{width:100% !important; min-width:100% !important;} /* Force iOS Mail to render the email at full width. */
+
+		/* STRUCTURAL STYLES */
+		.flexibleColumn{max-width:100% !important; width:100% !important;}
+		.flexibleGrid{max-width:50% !important;}
+
+		/* CONTENT STYLES */
+		#emailPreview{display:none !important; visibility:hidden !important;}
+
+		.headerButton{width:50% !important;}
+		.headerButtonContent{font-size:22px !important; padding:0 !important;}
+		.headerButtonContent a{padding:20px !important;}
+
+		#emailGrid .emailContainer{max-width:80% !important;}
+
+		.articleContent, .articleContent h3, .articleContent h5{text-align:center !important;}
+		.articleButton{margin:0 auto !important; width:50% !important;}
+		.articleButtonContent{font-size:22px !important; padding:0 !important;}
+		.articleButtonContent a{padding:20px !important;}
+	}
